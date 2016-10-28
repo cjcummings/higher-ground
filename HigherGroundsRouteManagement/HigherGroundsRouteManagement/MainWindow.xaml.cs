@@ -20,9 +20,17 @@ namespace HigherGroundsRouteManagement
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        /// System object used in this application.
+        private HGSystem mSystem;
+
+        /**
+         * Constructor.
+         */
         public MainWindow()
         {
             InitializeComponent();
+            this.mSystem = new HGSystem();
         }
     }
 }
